@@ -1,4 +1,4 @@
-# Part 1 - Overview 
+# Part 1 - Introduction  
 
 ### Things To Test with APIs
 - Routes (Endpoints)
@@ -16,29 +16,17 @@ In this assignment you will be using an existing application and writing some te
 - Testing an API by manipulating data in a database
 - Testing an API using mocks and stubs
 
-Please use your brain and/or seek out help for which methods to use which may include methods not mentioned here.
-
 ### Tools You Will be using
 If needed please reference these tools' respective sites for information on how to use them.
 
-express
-`Express is popular HTTP framework for NodeJS which will be used for creating the API`
-
-request
-`Request is a library for making HTTP requests. This will be used for making the HTTP requests in the tests`
-
-mocha
-`Mocha is a test runner that will be used to run the tests`
-
-chai
-
-`Chai is an assertion library which will be used to make assertions during the tests`
-
-sinon
-`Sinon is a library used to create mocks, spies, and stubs. It will used in the mocking tests`
-
-mockery
-`Mockery is used to control the require cache. It allows a different module to be substituted for a require. Mockery will be used for providing our mock of the database to the server`
+Tool  | Description
+----- | -----------
+express | Express is popular HTTP framework for NodeJS which will be used for creating the API
+request | Request is a library for making HTTP requests. This will be used for making the HTTP requests in the tests
+mocha | Mocha is a test runner that will be used to run the tests
+chai | Chai is an assertion library which will be used to make assertions during the tests
+sinon | Sinon is a library used to create mocks, spies, and stubs. It will used in the mocking tests
+mockery | Mockery is used to control the require cache. It allows a different module to be substituted for a require. Mockery will be used for providing our mock of the database to the server
 
 # Part 2 - Setup
 
@@ -95,4 +83,7 @@ The API supports adding and deleting individual vegetables. You can also get all
     * Url Parameters
         * name
             * The name of the vegetable to delete
+
+# Part 4 - Writing Tests
+
 
