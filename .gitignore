@@ -1,0 +1,12 @@
+# Integrated Dev Env files
+.idea
+.DS_Store
+
+# Logs
+*.log*
+
+# Npm cache directory
+.npm
+
+# Dependency directories
+node_modules
