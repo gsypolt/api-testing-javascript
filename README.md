@@ -48,16 +48,18 @@ Please install node from the [NodeJS website](https://nodejs.org/en/).
 Clone the api-testing-javascript(https://github.com/gsypolt/api-testing-javascript) repository and open a terminal to the directory.
 
 Change directory to api-testing-javascript:
+
 `
 $ cd api-testing-javascript
 ` 
 
 Now install the dependencies by running the following command:
+
 `
 $ npm install
 `
 
-To run each individual test the following npm scripts have been included. Feel free to run them now to see example test output. There is nothing in the tests so they should all pass.
+To run each individual test the following npm scripts are included. Feel free to run them now to see example test output. The tests included in the assignment are empty and all tests should pass when executing command below.
 
 `
 $ npm run test-external-process
@@ -76,21 +78,21 @@ It's always necessary to get to know the code you are testing. Let us examine th
 The API supports adding and deleting individual vegetables. You can also get all vegetables in the database. Here are the API routes:
 
 - GET /vegetable
--- Description
---- Get all the vegetables in the database
--- Query Parameters
---- upperCase
----- If set to "true" the vegetables will be return uppercase
----- Default is false
+.* Description
+..* Get all the vegetables in the database
+.* Query Parameters
+..* upperCase
+...* If set to "true" the vegetables will be return uppercase
+...* Default is false
 
 - POST /vegetable
--- Description
---- Add a vegetable to the database
+.* Description
+..* Add a vegetable to the database
 
 - DELETE /vegetable/:name
--- Description
---- Delete a vegetable from the database
--- Url Parameters
---- name
----- The name of the vegetable to delete
+.* Description
+..* Delete a vegetable from the database
+.* Url Parameters
+..* name
+...* The name of the vegetable to delete
 
