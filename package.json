@@ -1,0 +1,26 @@
+{
+  "name": "api-testing-javascript",
+  "version": "1.0.0",
+  "description": "Tutorial for API testing in javascript",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test-external-process": "mocha test/external-process.js",
+    "test-database": "mocha test/database.js",
+    "test-mocks": "mocha test/mocks.js",
+    "test-database-coverage": "istanbul cover --include-all-sources _mocha  --report html -- -R spec test/database.js",
+    "test-mocks-coverage": "istanbul cover --include-all-sources _mocha  --report html -- -R spec test/mocks.js"
+  },
+  "author": "Test Automation Team",
+  "license": "none",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "chai": "^3.5.0",
+    "express": "^4.14.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "mockery": "^2.0.0",
+    "request": "^2.79.0",
+    "sinon": "^1.17.7"
+  }
+}
