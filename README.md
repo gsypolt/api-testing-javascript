@@ -30,25 +30,13 @@ mockery | Mockery is used to control the require cache. It allows a different mo
 
 # Part 2 - Setup
 
-Setup
-Please install node from the [NodeJS website](https://nodejs.org/en/).
-
-Clone the api-testing-javascript(https://github.com/gsypolt/api-testing-javascript) repository and open a terminal to the directory.
-
-Change directory to api-testing-javascript:
-
-`
-$ cd api-testing-javascript
-` 
-
-Now install the dependencies by running the following command:
-
-`
-$ npm install
-`
-
-To run each individual test the following npm scripts are included. Feel free to run them now to see example test output. The tests included in the assignment are empty and all tests should pass when executing command below.
-
+Step | Action
+---- | ------
+Install NodeJS | https://nodejs.org/en/
+Clone api-testing-javascript repository | https://github.com/gsypolt/api-testing-javascript
+Change directory | cd api-testing-javascript
+Install the project dependencies | npm install 
+Run each individual tests | Feel free to run them now to see example test output. The tests included in the assignment are empty and all tests should pass when executing command below.
 `
 $ npm run test-external-process
 $ npm run test-database
