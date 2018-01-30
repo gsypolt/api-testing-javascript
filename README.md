@@ -39,11 +39,11 @@ Install the project dependencies | npm install
 Run each individual tests | Feel free to run them now to see example test output. The tests included in the assignment are empty and all tests should pass when executing command below.
 
 
-`
+```
 $ npm run test-external-process
 $ npm run test-database
 $ npm run test-mocks
-`
+```
 
 # Part 3 - Familiarizing Yourself with the System Under Test
 
