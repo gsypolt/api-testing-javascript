@@ -1,6 +1,6 @@
 # Part 1 - Introduction  
 
-### Things To Test with APIs
+### Thing's to think about testing
 - Routes (Endpoints)
 - HTTP Methods
 - URL Parameters
@@ -16,7 +16,7 @@ In this assignment you will be using an existing application and writing some te
 - Testing an API by manipulating data in a database
 - Testing an API using mocks and stubs
 
-### Tools You Will be using
+### Tools used in the assignment
 If needed please reference these tools' respective sites for information on how to use them.
 
 Tool  | Description
