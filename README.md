@@ -78,21 +78,21 @@ It's always necessary to get to know the code you are testing. Let us examine th
 The API supports adding and deleting individual vegetables. You can also get all vegetables in the database. Here are the API routes:
 
 * GET /vegetable
-** Description
-*** Get all the vegetables in the database
-** Query Parameters
-*** upperCase
-**** If set to "true" the vegetables will be return uppercase
-**** Default is false
+    * Description
+        * Get all the vegetables in the database
+    * Query Parameters
+        * upperCase
+            * If set to "true" the vegetables will be return uppercase
+            * Default is false
 
 * POST /vegetable
-** Description
-*** Add a vegetable to the database
+    * Description
+        * Add a vegetable to the database
 
 * DELETE /vegetable/:name
-** Description
-*** Delete a vegetable from the database
-** Url Parameters
-*** name
-**** The name of the vegetable to delete
+    * Description
+        * Delete a vegetable from the database
+    * Url Parameters
+        * name
+            * The name of the vegetable to delete
 
