@@ -1,6 +1,6 @@
 # Part 1 - Introduction  
 
-### Thing's to think about testing
+### Thing's to test
 - Routes (Endpoints)
 - HTTP Methods
 - URL Parameters
