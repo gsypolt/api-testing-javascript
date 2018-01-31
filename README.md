@@ -82,7 +82,7 @@ The API supports adding and deleting individual vegetables. You can also get all
 * Testing an API using mocks and stubs
 
 ### api-testing-javascript/test/external-process.js
-This method involves having an API running as an external process perhaps locally or on a server. The HTTP methods will used to interact with the code base. The tests that need to complete inside `external-process.js` test file. Create the test which tests that a correct response is received from the server after a POST with a new vegetable, GET, and DELETE a vegatable. 
+This method involves having an API running as an external process perhaps locally or on a server. The HTTP methods will used to interact with the code base. The tests that need to complete inside `external-process.js` test file. Create tests that a correct response is received from the server after a POST with a new vegetable, GET, and DELETE a vegatable. 
 
 *Acceptance Criteria*
 * Construct the url that will be used in the test. Also, you MUST add "done" as a parameter to the test.
@@ -92,7 +92,7 @@ This method involves having an API running as an external process perhaps locall
 * Add the assertions for status code and response text.
 
 ### api-testing-javascript/test/database.js
-This test will interact with the database while using the API. The API will run in the test file and will stopped after the test is finished. WARNING `Express` does not have a stop method so we are relying on the test runner to destroy everything and end the process. The tests need to completed inside `database.js` test file. Create the test which tests that a vegetable gets put in the database after a POST with a new vegetable, GET, and DELETE a vegatable.
+This test will interact with the database while using the API. The API will run in the test file and will stopped after the test is finished. WARNING `Express` does not have a stop method so we are relying on the test runner to destroy everything and end the process. The tests need to completed inside `database.js` test file. Create tests that a vegetable gets put in the database after a POST with a new vegetable, GET, and DELETE a vegatable.
 
 *Acceptance Criteria*
 * Construct the url that will be used in the test. Also, you MUST add "done" as a parameter to the test.
@@ -102,14 +102,25 @@ This test will interact with the database while using the API. The API will run 
 * Add the assertion to check the database has the correct vegetable.
 
 ### api-testing-javascript/test/mocks.js
-This test will mock database interactions. The API will run in the test file and will stopped after the test is finished. WARNING `Express` does not have a stop method so we are just relying on the test runner to destroy everything and end process. 
+This test will mock database interactions. The API will run in the test file and will stopped after the test is finished. WARNING `Express` does not have a stop method so we are relying on the test runner to destroy everything and end process. 
+
+Examing the test shell - The before hook that enables mockery which will intercept the require call.The database mock is set up using sinon stubs which can be manipulated to perform a range of different behaviors. Then mock is registered which means whenever "../database.js" is required the databaseMock will be supplied instead of the actual file. Continue on writing the other tests inside `mocks.js` test file.
 
 *Acceptance Criteria*
-* coming soon
+* Test that a 500 is returned when the call to "database.addVegetable" throws.
+* Construct the url that will be used in the test. The stub to throw an exception by calling the "throws" method.
+* Add some options to tell the request library how we want the request made. We will be sending plain text in the post request and the body is the vegetable to add to the database.
+* Add a callback to the request which will called when it completes.
+* Add the assertion for the status code.
 
 # Part 5 - Checking Code Coverage
+In order to check the code coverage of a test you can use a tool like `istanbul`. There following commands will report coverage the respective test patterns. Istanbul will create a folder named "coverage" which includes an "index.html". Open it in a browser to view the entire coverage report. There should also be an overview of code coverage printed out in the command line when the test is finished. 
 
-...
+```
+$ npm run test-database-coverage
+$ npm run test-mocks-coverage
+```
+
 
 # Part 6 - Endpoint Load Testing
 
