@@ -114,14 +114,18 @@ Examing the test shell - The before hook that enables mockery which will interce
 * Add the assertion for the status code.
 
 # Part 5 - Checking Code Coverage
-In order to check the code coverage of a test you can use a tool like `istanbul`. There following commands will report coverage the respective test patterns. Istanbul will create a folder named "coverage" which includes an "index.html". Open it in a browser to view the entire coverage report. There should also be an overview of code coverage printed out in the command line when the test is finished. 
+In order to check the code coverage of a test you can use a tool like `istanbul`. There following commands will report coverage the respective test patterns. Istanbul will create a folder named "coverage" which includes an "index.html". We can open up the report it in a browser to view the entire coverage report.
 
 ```
 $ npm run test-database-coverage
 $ npm run test-mocks-coverage
 ```
 
+# Part 6 - Load Testing 
 
-# Part 6 - Endpoint Load Testing
+* Add load testing to the existing Node.js project and reporting the results.
 
-...
+# Bonus  
+
+* Adding Swagger to the existing Node.js project
+* Use a cloud continuous integration platform such as TravisCI, CloudBee Jenkins, Drone.io, or something free to create a continuous integration pipeline for your Gannett Technical Assignment web application. When commit a change to your GIT repo, it triggers the CI platform to execute all of your tests.
