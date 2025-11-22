@@ -50,7 +50,7 @@ describe('vegetable api - mocks', function() {
     });
 
     describe('when DELETE /vegetable/:name is requested', function() {
-        it('should respond with 500 and if databaseMock.getVegetables throws an error', function() {
+        it('should respond with 500 and if databaseMock.deleteVegetable throws an error', function() {
 
         });
     });
